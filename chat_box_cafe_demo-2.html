@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chat Box Café — Dhamtari</title>
+<meta name="description" content="Chat Box Café demo website — Dhamtari">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;background:#120e0b;color:#fff;line-height:1.55}
+a{text-decoration:none;color:inherit}.wrap{width:min(1120px,92%);margin:auto}
+nav{position:sticky;top:0;z-index:20;background:rgba(18,14,11,.88);backdrop-filter:blur(14px);border-bottom:1px solid #382a20}
+.nav{height:68px;display:flex;align-items:center;justify-content:space-between}.logo{font-weight:900;font-size:1.25rem}
+.logo b{color:#f2a45d}.links{display:flex;gap:24px;color:#d7cbc2;font-size:.9rem}.links a:hover{color:#f2a45d}
+.hero{min-height:84vh;display:grid;align-items:end;position:relative;overflow:hidden;background:
+linear-gradient(180deg,rgba(0,0,0,.12),rgba(18,14,11,.96)),
+url('https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1800&q=85') center/cover}
+.hero:after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 70% 35%,transparent 0,rgba(0,0,0,.22) 45%,rgba(0,0,0,.62) 100%)}
+.hero-content{position:relative;z-index:2;padding:110px 0 78px;max-width:760px}.eyebrow{color:#f2a45d;font-weight:800;letter-spacing:2px;text-transform:uppercase;font-size:.78rem}
+h1{font-size:clamp(3rem,8vw,6.4rem);line-height:.95;letter-spacing:-4px;margin:14px 0 20px}
+.hero p{color:#eee1d8;max-width:600px;font-size:1.08rem}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{padding:13px 20px;border-radius:13px;font-weight:800}.primary{background:#f2a45d;color:#21150e}.glass{border:1px solid rgba(255,255,255,.28);background:rgba(255,255,255,.08)}
+section{padding:82px 0}.heading{text-align:center;margin-bottom:38px}.heading .eyebrow{display:block}.heading h2{font-size:2.35rem;margin:5px 0}.heading p{color:#a99b91}
+.featured{display:grid;grid-template-columns:1.15fr .85fr;gap:18px}.feature-card,.menu-card,.visit-card{background:#1d1713;border:1px solid #3a2c23;border-radius:22px;overflow:hidden}
+.feature-card img{width:100%;height:100%;min-height:360px;object-fit:cover}.feature-copy{padding:28px}.feature-copy h3{font-size:1.7rem;margin-bottom:8px}.muted{color:#b7aaa1}
+.menu-tabs{display:flex;gap:10px;overflow:auto;padding-bottom:12px;margin-bottom:18px;justify-content:center}.tab{border:1px solid #49372a;background:#1c1511;color:#d8c9bd;padding:9px 14px;border-radius:999px;white-space:nowrap}
+.tab.active{background:#f2a45d;color:#21150e;border-color:#f2a45d}.menu-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.menu-card{padding:18px;display:flex;gap:15px;align-items:center}.food{width:78px;height:78px;border-radius:15px;object-fit:cover;flex:none}.menu-card h3{font-size:1rem}.menu-card p{color:#9f9187;font-size:.82rem}.price{color:#f2a45d;font-weight:900;margin-left:auto;white-space:nowrap}
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.gallery img{width:100%;height:190px;object-fit:cover;border-radius:18px;border:1px solid #3a2c23}
+.visit{display:grid;grid-template-columns:1fr 1fr;gap:18px}.visit-card{padding:28px}.visit-card h3{margin-bottom:10px}.info{margin:16px 0;color:#cfc2b9}.cta{display:flex;gap:10px;flex-wrap:wrap}
+footer{border-top:1px solid #33271f;padding:30px 0;color:#8f8278;text-align:center}.demo{font-size:.75rem;color:#766a62;margin-top:10px}
+@media(max-width:760px){.links{display:none}.hero{min-height:78vh}.hero-content{padding:95px 0 55px}h1{letter-spacing:-2px}.featured,.visit,.menu-grid{grid-template-columns:1fr}.gallery{grid-template-columns:repeat(2,1fr)}.gallery img{height:150px}.menu-tabs{justify-content:flex-start}}
+</style>
+</head>
+<body>
+<nav><div class="wrap nav"><div class="logo">Chat Box <b>Café</b></div><div class="links"><a href="#about">About</a><a href="#menu">Menu</a><a href="#gallery">Gallery</a><a href="#visit">Visit</a></div></div></nav>
+
+<header class="hero">
+<div class="wrap hero-content">
+<div class="eyebrow">Dhamtari • Café • Fast Food</div>
+<h1>Good food.<br>Better conversations.</h1>
+<p>A modern café experience for pizza, burgers, momos, pasta, snacks and refreshing drinks.</p>
+<div class="actions"><a class="btn primary" href="#menu">Explore Menu ↓</a><a class="btn glass" href="https://wa.me/919343852021">WhatsApp Us</a></div>
+</div></header>
+
+<section id="about"><div class="wrap">
+<div class="heading"><span class="eyebrow">What's on the table</span><h2>Made for every craving</h2><p>A few highlights from the current online menu.</p></div>
+<div class="featured">
+<div class="feature-card"><img src="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=1200&q=85" alt="Pizza"></div>
+<div class="feature-card feature-copy"><h3>From pizza to momos</h3><p class="muted">Chat Box's current online menu includes pizza & pasta, burgers & sandwiches, momos, snacks, fried rice & noodles, beverages and more.</p><div class="actions"><a class="btn primary" href="#menu">See highlights</a></div></div>
+</div></div></section>
+
+<section id="menu"><div class="wrap">
+<div class="heading"><span class="eyebrow">Menu</span><h2>Customer favourites</h2><p>Sample presentation using items listed on the current online menu.</p></div>
+<div class="menu-tabs"><span class="tab active">Highlights</span><span class="tab">Pizza & Pasta</span><span class="tab">Burgers</span><span class="tab">Momos</span><span class="tab">Drinks</span></div>
+<div class="menu-grid">
+<div class="menu-card"><img class="food" src="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=300&q=80"><div><h3>Farmhouse Pizza</h3><p>7 inch • mushroom, onion, bell pepper, tomato & corn</p></div></div>
+<div class="menu-card"><img class="food" src="https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=300&q=80"><div><h3>Veg Tandoori Momos</h3><p>8 pieces • tandoori-style veg momos</p></div></div>
+<div class="menu-card"><img class="food" src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=300&q=80"><div><h3>Double Patty Burger</h3><p>A filling burger option from the current menu</p></div></div>
+<div class="menu-card"><img class="food" src="https://images.unsplash.com/photo-1572449043416-55f4685c9bb7?auto=format&fit=crop&w=300&q=80"><div><h3>Cold Coffee</h3><p>250 ml • blended coffee with milk</p></div></div>
+</div>
+<p class="demo">Prices intentionally omitted until the café confirms the latest menu pricing.</p>
+</div></section>
+
+<section id="gallery"><div class="wrap">
+<div class="heading"><span class="eyebrow">Gallery</span><h2>The café mood</h2><p>Visual placeholders for the demo — replace with the café's own approved photos before publishing.</p></div>
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=700&q=80" alt="Pizza">
+<img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=700&q=80" alt="Burger">
+<img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=700&q=80" alt="Momos">
+<img src="https://images.unsplash.com/photo-1572449043416-55f4685c9bb7?auto=format&fit=crop&w=700&q=80" alt="Cold coffee">
+</div></div></section>
+
+<section id="visit"><div class="wrap">
+<div class="heading"><span class="eyebrow">Come by</span><h2>Find Chat Box Café</h2><p>Easy contact and location information in one place.</p></div>
+<div class="visit">
+<div class="visit-card"><h3>📍 Location</h3><p class="info">Shop 2, Nilgiri Heights, Housing Board Colony, Dhamtari, Chhattisgarh 493773</p><div class="cta"><a class="btn primary" href="https://www.google.com/maps/search/?api=1&query=Chat%20Box%20Cafe%20Dhamtari">Get Directions</a></div></div>
+<div class="visit-card"><h3>📲 Order / Contact</h3><p class="info">For takeaway, delivery or general enquiries, contact the café directly.</p><div class="cta"><a class="btn primary" href="tel:+919343852021">Call</a><a class="btn glass" href="https://wa.me/919343852021">WhatsApp</a></div></div>
+</div></div></section>
+
+<footer><div class="wrap">Chat Box Café • Dhamtari<div class="demo">DEMO CONCEPT — prepared for presentation; replace placeholder imagery and confirm business details before publishing.</div></div></footer>
+</body></html>
